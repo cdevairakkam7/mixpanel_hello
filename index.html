@@ -25,6 +25,19 @@ mixpanel.init("d29fc6566735b5c942068647df9f4d2c", {batch_requests: true})</scrip
 	<button onclick="maroon_button();" style="color: white;background: maroon"> Click this button
 	</button>
 	<div>
+		
+		
+		<script>
+			var USER_ID = "12148";
+var USER_SIGNUP_DATE = "2020-01-02T21:07:03Z";
+
+mixpanel.people.set({
+  "$email": "jsmith@example.com",    // only reserved properties need the $
+  "Sign up date": USER_SIGNUP_DATE,    // Send dates in ISO timestamp format (e.g. "2020-01-02T21:07:03Z")
+  "USER_ID": USER_ID,    // use human-readable names
+  "credits": 150    // ...or numbers
+});
+		</script>
 
 
 </body>
